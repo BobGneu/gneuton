@@ -1,14 +1,20 @@
 ﻿namespace Gneuton
 {
+	using System;
+
 	public class GneutonTimer
 	{
-		public GneutonTimer(GneutonApplication gneutonApplication)
+		public GneutonTimer(IGneutonApplication application)
 		{
-			gneutonApplication.OnTick += this.OnTick;
+			application.OnTick += this.OnTick;
 		}
 
 		private void OnTick()
 		{
 		}
+	}
+
+	public interface IGneutonApplication {
+		event Action OnTick;
 	}
 }

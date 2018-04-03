@@ -1,9 +1,8 @@
 ﻿namespace Gneuton
 {
 	using System;
-	using System.Diagnostics;
 
-	public class GneutonApplication : IDisposable
+	public class GneutonApplication : IDisposable, IGneutonApplication
 	{
 		public bool IsRunning { get; set; }
 		public bool IsPaused { get; set; }
