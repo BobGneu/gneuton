@@ -1,0 +1,25 @@
+image:
+- Visual Studio 2015
+- Visual Studio 2017
+
+version: '1.0.{build}'
+platform: 
+  - x86
+  - x64
+
+configuration:
+  - debug
+  - release
+
+before_build:
+- nuget restore Gneuton.sln
+
+build:
+  project: Gneuton.sln
+  verbosity: minimal
+
+test:
+  assemblies:
+    - 'Build\Output\*Tests.dll'
+
+deploy: off
