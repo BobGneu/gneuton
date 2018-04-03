@@ -56,6 +56,7 @@
     <Compile Include="Factory.cs" />
     <Compile Include="GneutonApplication.cs" />
     <Compile Include="GneutonTimer.cs" />
+    <Compile Include="IGneutonApplication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

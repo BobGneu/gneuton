@@ -1,7 +1,5 @@
 ﻿namespace Gneuton
 {
-	using System;
-
 	public class GneutonTimer
 	{
 		public GneutonTimer(IGneutonApplication application)
@@ -12,9 +10,5 @@
 		private void OnTick()
 		{
 		}
-	}
-
-	public interface IGneutonApplication {
-		event Action OnTick;
 	}
 }
