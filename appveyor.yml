@@ -6,10 +6,11 @@ version: '1.0.{build}'
 platform: 
   - x86
   - x64
+  - Any CPU
 
 configuration:
-  - debug
-  - release
+  - Debug
+  - Release
 
 before_build:
 - nuget restore Gneuton.sln
