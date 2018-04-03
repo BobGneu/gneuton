@@ -6,6 +6,7 @@
 	{
 		public bool IsRunning { get; set; }
 		public bool IsPaused { get; set; }
+
 		public GneutonTimer timer { get; set; }
 
 		public void Initialize()

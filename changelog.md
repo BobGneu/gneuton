@@ -8,4 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 * Automated build script for Windows
 
+### Changed
+* Redirecting output to ./dist
+
 [Unreleased]: https://github.com/BobGneu/gneuton/compare/master...develop
