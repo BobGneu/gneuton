@@ -21,4 +21,13 @@ test:
   assemblies:
     - 'Build\Output\*Tests.dll'
 
+    
+# enable patching of AssemblyInfo.* files
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "1.0.0.{build}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}-{branch}"
+
 deploy: off

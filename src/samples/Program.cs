@@ -20,7 +20,8 @@
 			{
 				while (application.IsRunning)
 				{
-					application.Synchronize();
+					application.Update();
+					application.Draw();
 				}
 			}
 
