@@ -11,7 +11,7 @@
 		public static int Main(string[] args)
 		{
 			// TODO: Pass configuration parameters in here
-			var application = Gneuton.Factory.CreateApplication();
+			var application = Factory.CreateApplication();
 
 			// Start timer
 			application.Initialize();

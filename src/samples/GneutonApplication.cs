@@ -9,13 +9,11 @@
 		public bool IsRunning { get; set; }
 		public bool IsPaused { get; set; }
 
-		public GneutonTimer Timer { get; set; }
 		public GameForm GameForm { get; set; }
 
 		public void Initialize()
 		{
 			IsRunning = true;
-			Timer = new GneutonTimer(this);
 
 			InitializeMainWindow();
 		}
@@ -34,13 +32,11 @@
 			GameForm.Activated += (sender, e) =>
 			{
 				IsPaused = false;
-				Timer.Start();
 			};
 
 			GameForm.Deactivate += (sender, e) =>
 			{
 				IsPaused = true;
-				Timer.Stop();
 			};
 
 			GameForm.HandleDestroyed += (sender, e) => IsRunning = false;
