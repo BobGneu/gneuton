@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Added
 * Automated build script for Windows
+* Sample test fixture to validate appveyor integration
 
 ### Changed
 * Redirecting output to ./dist
