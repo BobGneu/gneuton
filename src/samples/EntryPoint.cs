@@ -2,13 +2,13 @@
 {
 	using System;
 
-	static class EntryPoint
+	public static class EntryPoint
 	{
 		/// <summary>
 		/// The main entry point for the application.
 		/// </summary>
 		[STAThread]
-		static int Main()
+		public static int Main(string[] args)
 		{
 			// TODO: Pass configuration parameters in here
 			var application = Gneuton.Factory.CreateApplication();

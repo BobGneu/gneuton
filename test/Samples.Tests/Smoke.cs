@@ -1,4 +1,4 @@
-﻿namespace Samples.Tests
+﻿namespace Gneuton.Tests
 {
 	using NUnit.Framework;
 
