@@ -20,46 +20,27 @@
 
 		private void InitializeMainWindow()
 		{
-			GameForm = new GameForm(this);
-
-			GameForm.KeyDown += (sender, e) => OnKeyDown(e.KeyCode);
-			GameForm.KeyUp += (sender, e) => OnKeyUp(e.KeyCode);
-
-			GameForm.MouseDown += (sender, e) => OnMouseDown(e.Button, new Point(e.X, e.Y));
-			GameForm.MouseUp += (sender, e) => OnMouseUp(e.Button, new Point(e.X, e.Y));
-			GameForm.MouseMove += (sender, e) => OnMouseMove(e.Button, new Point(e.X, e.Y));
-
-			GameForm.Activated += (sender, e) =>
-			{
-				IsPaused = false;
-			};
-
-			GameForm.Deactivate += (sender, e) =>
-			{
-				IsPaused = true;
-			};
-
-			GameForm.HandleDestroyed += (sender, e) => IsRunning = false;
+			GameForm = new GameForm(this);;
 
 			GameForm.Show();
 			GameForm.Update();
 		}
 
-		private void OnMouseMove(MouseButtons eButton, Point point)
+		public void OnMouseMove(MouseButtons eButton, Point point)
 		{
 		}
 
-		private void OnMouseUp(MouseButtons eButton, Point point)
+		public void OnMouseUp(MouseButtons eButton, Point point)
 		{
 			GameForm.Capture = false;
 		}
 
-		private void OnMouseDown(MouseButtons eButton, Point point)
+		public void OnMouseDown(MouseButtons eButton, Point point)
 		{
 			GameForm.Capture = true;
 		}
 
-		protected virtual void OnKeyUp(Keys keyCode)
+		public virtual void OnKeyUp(Keys keyCode)
 		{
 			switch (keyCode)
 			{
@@ -69,7 +50,7 @@
 			}
 		}
 
-		private void OnKeyDown(Keys eKeyCode)
+		public void OnKeyDown(Keys eKeyCode)
 		{
 		}
 
