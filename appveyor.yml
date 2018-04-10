@@ -19,7 +19,7 @@ build:
 
 test:
   assemblies:
-    - 'Build\Output\*Tests.dll'
+    - '.\dist\*.Tests.dll'
     
 assembly_info:
   patch: true
